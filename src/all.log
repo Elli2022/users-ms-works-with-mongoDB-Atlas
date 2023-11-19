@@ -1,0 +1,32 @@
+{"level":"info","message":"[MyAppAtHome] Bootstrapping micro service","timestamp":"2023-10-26 11:33:10"}
+{"level":"info","message":"[EXPRESS] Server running at http://127.0.0.1:3000/","timestamp":"2023-10-26 11:33:10"}
+{"level":"info","message":"[EXPRESS] Connection received: 127.0.0.1:/api/v1/user:POST","timestamp":"2023-10-26 11:33:19"}
+{"level":"info","message":"[POST][USE-CASE] Inserting object process - START!","timestamp":"2023-10-26 11:33:19"}
+{"level":"error","message":"[EP][POST] POST: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2023-10-26 11:33:49"}
+{"level":"info","message":"[MyAppAtHome] Bootstrapping micro service","timestamp":"2023-10-26 11:35:38"}
+{"level":"info","message":"[EXPRESS] Server running at http://127.0.0.1:3000/","timestamp":"2023-10-26 11:35:38"}
+{"level":"info","message":"[EXPRESS] Connection received: 127.0.0.1:/api/v1/user:POST","timestamp":"2023-10-26 11:35:42"}
+{"level":"info","message":"[POST][USE-CASE] Inserting object process - START!","timestamp":"2023-10-26 11:35:42"}
+{"level":"error","message":"[EP][POST] POST: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2023-10-26 11:36:12"}
+{"level":"info","message":"[MyAppAtHome] Bootstrapping micro service","timestamp":"2023-10-26 11:38:05"}
+{"level":"info","message":"[EXPRESS] Server running at http://127.0.0.1:3000/","timestamp":"2023-10-26 11:38:05"}
+{"level":"info","message":"[MyAppAtHome] Bootstrapping micro service","timestamp":"2023-10-26 11:43:06"}
+{"level":"info","message":"[EXPRESS] Server running at http://127.0.0.1:3000/","timestamp":"2023-10-26 11:43:06"}
+{"level":"info","message":"[MyAppAtHome] Bootstrapping micro service","timestamp":"2023-10-26 11:58:16"}
+{"level":"info","message":"[EXPRESS] Server running at http://127.0.0.1:3000/","timestamp":"2023-10-26 11:58:16"}
+{"level":"info","message":"[EXPRESS] Connection received: 127.0.0.1:/api/v1/user:POST","timestamp":"2023-10-26 11:58:21"}
+{"level":"info","message":"[POST][USE-CASE] Inserting object process - START!","timestamp":"2023-10-26 11:58:21"}
+{"level":"error","message":"[EP][POST] POST: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2023-10-26 11:58:51"}
+{"level":"info","message":"[EXPRESS] Connection received: 127.0.0.1:/api/v1/user:POST","timestamp":"2023-10-26 12:00:24"}
+{"level":"info","message":"[POST][USE-CASE] Inserting object process - START!","timestamp":"2023-10-26 12:00:24"}
+{"level":"info","message":"[MONGODB] Connection successfull.","timestamp":"2023-10-26 12:00:24"}
+{"level":"info","message":"[MONGODB] Closing connection...","timestamp":"2023-10-26 12:00:24"}
+{"level":"info","message":"[MONGODB] Connection closed...","timestamp":"2023-10-26 12:00:24"}
+{"level":"info","message":"[MONGODB] Connection successfull.","timestamp":"2023-10-26 12:00:24"}
+{"level":"info","message":"[MONGODB] Closing connection...","timestamp":"2023-10-26 12:00:24"}
+{"level":"info","message":"[MONGODB] Connection closed...","timestamp":"2023-10-26 12:00:24"}
+{"level":"info","message":"[POST][USE-CASE] Inserting object process - DONE!","timestamp":"2023-10-26 12:00:24"}
+{"level":"info","message":"[USE-CASE][GET] Reading from db - START!","timestamp":"2023-10-26 12:00:24"}
+{"level":"info","message":"[MONGODB] Connection successfull.","timestamp":"2023-10-26 12:00:24"}
+{"level":"info","message":"[MONGODB] Closing connection...","timestamp":"2023-10-26 12:00:24"}
+{"level":"info","message":"[MONGODB] Connection closed...","timestamp":"2023-10-26 12:00:24"}
