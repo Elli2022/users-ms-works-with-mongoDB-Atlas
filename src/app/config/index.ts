@@ -13,7 +13,7 @@ const MONGO_DB_COLLECTION = process.env.MONGO_DB_COLLECTION;
 
 const DB_CONFIG = {
   dbName: "db_my_app",
-  dbUri: `${process.env.MONGODB_DB_URL}/${process.env.MONGODB_DB_NAME}`,
+  dbUri: `${process.env.MONGODB_DB_URL}`,
   dbColl: "coll_users",
 };
 
