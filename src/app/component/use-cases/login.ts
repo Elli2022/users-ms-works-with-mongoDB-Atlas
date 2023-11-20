@@ -1,7 +1,7 @@
-// src/app/component/use-cases/login.ts
 const crypto = require("crypto");
+const jwt = require("jsonwebtoken");
 
-export default function createLogin({ findDocuments, jwt, logger }) {
+export default function createLogin({ findDocuments, logger }) {
   return Object.freeze({ login });
 
   async function login({ username, password, dbConfig }) {
@@ -11,33 +11,31 @@ export default function createLogin({ findDocuments, jwt, logger }) {
         `[LOGIN][USE-CASE] Attempting login for username: ${username}`
       );
 
+      // Hämtar användaren från databasen
       const query = { username };
       const users = await findDocuments({ query, dbConfig });
       const user = users[0];
 
+      // Kontrollerar om användaren hittades
       if (!user) {
         logger.warn("[LOGIN][USE-CASE] User not found in database");
         throw new Error("Användaren hittades inte.");
       }
 
-      logger.info(`[LOGIN][USE-CASE] User found: ${JSON.stringify(user)}`);
-
-      // Hashar inkommande lösenord med md5 och jämför
+      // Hashar det inskickade lösenordet
       const hashedPassword = crypto
         .createHash("md5")
         .update(password)
         .digest("hex");
-      logger.info(
-        `[LOGIN][USE-CASE] Hashed incoming password: ${hashedPassword}`
-      );
 
-      if (hashedPassword !== user.passwordHash) {
+      // Jämför det hashade lösenordet med det lagrade lösenordet
+      if (hashedPassword !== user.password) {
         logger.warn("[LOGIN][USE-CASE] Incorrect password");
         throw new Error("Felaktigt lösenord.");
       }
 
       // Skapar JWT-token
-      const token = jwt.sign({ userId: user.id }, "din_jwt_secret", {
+      const token = jwt.sign({ userId: user._id }, "din_jwt_secret", {
         expiresIn: "1h",
       });
       logger.info("[LOGIN][USE-CASE] Login successful. Token generated.");

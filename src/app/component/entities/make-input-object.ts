@@ -1,3 +1,4 @@
+//src/app/component/entities/make-input-object.ts
 export default function makeInputObjectFactory({ md5, sanitize }) {
   return Object.freeze({ inputObj });
   let localErrorMsgs = {};

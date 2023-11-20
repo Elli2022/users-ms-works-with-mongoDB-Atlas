@@ -1,3 +1,5 @@
+//src/app/component/use-cases/post.ts
+
 export default function createPost({
   makeInputObj,
   findDocuments,

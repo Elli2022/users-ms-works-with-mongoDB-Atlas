@@ -14,17 +14,6 @@ const getUsersEP = async (req, res) => {
   }
 };
 
-// const registerUserEP = async (req, res) => {
-//   try {
-//     let results = await post({ params: req.body });
-//     res.json({ err: 0, data: results });
-//   } catch (err) {
-//     logger.error(`[EP][POST] ${req.method}: ${err.message}`);
-//     res.status(403);
-//     res.json({ err: 1, data: err.message });
-//   }
-// };
-
 const registerUserEP = async (req, res) => {
   try {
     const results = await post({ params: req.body });
